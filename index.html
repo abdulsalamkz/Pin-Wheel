@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinwheel</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #fafafa;
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/ef6aec1100.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="lg:bg-transparent bg-[#ffffff] relative z-10">
+    <div class="container mx-auto px-4 flex items-center justify-between py-4">
+      <div>
+        <img src="./img/logo.svg" alt="Logo" />
+      </div>
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
+      <label for="menu-toggle" class="sm:block lg:hidden cursor-pointer">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </label>
+      <nav
+        class="hidden peer-checked:flex lg:flex flex-col lg:flex-row lg:space-x-6 absolute lg:static top-16 left-0 right-0 bg-[#ffffff] lg:bg-transparent shadow-md lg:shadow-none z-10">
+        <ul class="flex flex-col lg:flex-row text-gray-700 text-center">
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">Home</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">About</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">Blog</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">Features</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">How It Works</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">Pages</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">Contact</a>
+          </li>
+        </ul>
+        <div class="flex justify-center gap-2 sm:flex md:flex lg:hidden items-center my-4 space-x-4">
+          <a href="#"
+            class="bg-white border text-black font-medium text-base px-4 py-2 text-center rounded-full flex justify-center items-center w-36">
+            Sign Up Now
+          </a>
+        </div>
+      </nav>
+      <div class="hidden lg:flex items-center">
+        <button
+          class="bg-white border text-black font-medium text-base px-4 py-2 rounded-full flex justify-center items-center w-36">
+          Sign Up Now
+        </button>
+      </div>
+    </div>
+  </header>
+  <section>
+    <img src="./img/banner-shape.svg" class="absolute top-0 right-0 -z-10 h-auto" alt="" />
+    <div class="lg:max-w-6xl container mx-auto py-16">
+      <div class="grid lg:grid-cols-2 grid-cols-1 items-center">
+        <div class="px-4">
+          <h1 class="lg:text-5xl text-4xl leading-tight font-bold">
+            Scale design & dev <br class="md:block hidden" />
+            operations with <br class="md:block hidden" />
+            Avocode Enterprise
+          </h1>
+          <p class="mt-6 text-[#888888]">
+            A fully integrated suite of authentication & authoriz products,
+            Stytch’s platform removes the headache of.
+          </p>
+          <button class="btn btn-white mt-8 shadow-lg bg-white py-[14px] px-8 rounded-full">
+            Download The Theme
+          </button>
+        </div>
+        <div class="px-4 text-center">
+          <img src="./img/banner-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="relative py-16">
+    <img class="absolute left-0 top-0 -z-10 -translate-y-1/2" src="img/feature-shape.svg" alt="" />
+    <div class="lg:max-w-6xl container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="lg:w-4/5">
+          <h2 class="text-2xl lg:text-4xl font-bold">
+            The Highlighting Part Of Our Solution
+          </h2>
+        </div>
+        <div class="w-4/5">
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            egestas Werat viverra id et aliquet. vulputate egestas
+            sollicitudin.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-5 mt-10">
+        <div class="flex flex-col justify-between rounded-lg bg-white p-6 shadow-lg">
+          <div>
+            <h3 class="text-xl lg:text-2xl font-semibold">Live Caption</h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+          <span class="mt-4 text-[#fa7398] text-3xl">
+            <i class="fa-solid fa-closed-captioning"></i>
+          </span>
+        </div>
+
+        <div class="flex flex-col justify-between rounded-lg bg-white p-6 shadow-lg">
+          <div>
+            <h3 class="text-xl lg:text-2xl font-semibold">Smart Reply</h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+          <span class="mt-4 text-[#fa7398] text-3xl">
+            <i class="fa-solid fa-comments"></i>
+          </span>
+        </div>
+
+        <div class="flex flex-col justify-between rounded-lg bg-white p-6 shadow-lg">
+          <div>
+            <h3 class="text-xl lg:text-2xl font-semibold">Sound Amplifier</h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+          <span class="mt-4 text-[#fa7398] text-3xl">
+            <i class="fa-solid fa-volume-up"></i>
+          </span>
+        </div>
+
+        <div class="flex flex-col justify-between rounded-lg bg-white p-6 shadow-lg">
+          <div>
+            <h3 class="text-xl lg:text-2xl font-semibold">
+              Gesture Navigation
+            </h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+          <span class="mt-4 text-[#fa7398] text-3xl">
+            <i class="fa-solid fa-hand-pointer"></i>
+          </span>
+        </div>
+
+        <div class="flex flex-col justify-between rounded-lg bg-white p-6 shadow-lg">
+          <div>
+            <h3 class="text-xl lg:text-2xl font-semibold">Dark Theme</h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+          <span class="mt-4 text-[#fa7398] text-3xl">
+            <i class="fa-solid fa-moon"></i>
+          </span>
+        </div>
+
+        <div class="flex flex-col justify-between rounded-lg bg-white p-6 shadow-lg">
+          <div>
+            <h3 class="text-xl lg:text-2xl font-semibold">
+              Privacy Controls
+            </h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+          <span class="mt-4 text-[#fa7398] text-3xl">
+            <i class="fa-solid fa-user-shield"></i>
+          </span>
+        </div>
+
+        <div class="flex flex-col justify-between rounded-lg bg-white p-6 shadow-lg">
+          <div>
+            <h3 class="text-xl lg:text-2xl font-semibold">
+              Location Controls
+            </h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+          <span class="mt-4 text-[#fa7398] text-3xl">
+            <i class="fa-solid fa-map-marker-alt"></i>
+          </span>
+        </div>
+
+        <div class="flex flex-col justify-between rounded-lg bg-white p-6 shadow-lg">
+          <div>
+            <h3 class="text-xl lg:text-2xl font-semibold">
+              Security Updates
+            </h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+          <span class="mt-4 text-[#fa7398] text-3xl">
+            <i class="fa-solid fa-shield-alt"></i>
+          </span>
+        </div>
+
+        <div class="flex flex-col justify-between rounded-lg bg-white p-6 shadow-lg">
+          <div>
+            <h3 class="text-xl lg:text-2xl font-semibold">Focus Mode</h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+          <span class="mt-4 text-[#fa7398] text-3xl">
+            <i class="fa-solid fa-eye"></i>
+          </span>
+        </div>
+
+        <div class="flex flex-col justify-between rounded-lg bg-white p-6 shadow-lg">
+          <div>
+            <h3 class="text-xl lg:text-2xl font-semibold">Family Link</h3>
+            <p class="text-gray-600">
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+          </div>
+          <span class="mt-4 text-[#fa7398] text-3xl">
+            <i class="fa-solid fa-users"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-16 bg-gray-50">
+    <div class="lg:max-w-6xl container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="space-y-6">
+            <h2 class="text-3xl font-bold text-gray-900">
+              Prevent failure from impacting your reputation
+            </h2>
+            <p class="text-gray-600">
+              Our platform helps you build secure onboarding authentication
+              experiences that retain and engage your users.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-center text-gray-700">
+                <i class="fas fa-tint text-orange-500 text-xl mr-3"></i>
+                Habit building essential choose habit
+              </li>
+              <li class="flex items-center text-gray-700">
+                <i class="fas fa-brain text-orange-500 text-xl mr-3"></i>
+                Get an overview of Habit Calendars.
+              </li>
+              <li class="flex items-center text-gray-700">
+                <i class="fas fa-stopwatch text-orange-500 text-xl mr-3"></i>
+                Start building with Habitify platform
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img class="w-full object-contain" src="img/sells-by-country.png" alt="" />
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center mt-16">
+        <div>
+          <img class="w-full object-contain" src="img/collaboration.png" alt="" />
+        </div>
+        <div class="mb-5">
+          <h2 class="text-3xl font-bold text-gray-900">
+            Accept payments any country in this whole universe
+          </h2>
+          <p class="text-gray-600 mt-4">
+            Donec sollicitudin molestie malesuada. Mauris pellentesque nec,
+            egestas non nisi. Cras ultricies ligula sed.
+          </p>
+          <ul class="space-y-4 mt-6">
+            <li class="flex items-center text-gray-700">
+              <i class="fas fa-check-circle text-orange-500 text-xl mr-3"></i>
+              Supporting more than 119 country world
+            </li>
+            <li class="flex items-center text-gray-700">
+              <i class="fas fa-check-circle text-orange-500 text-xl mr-3"></i>
+              Open transaction with more than currencies
+            </li>
+            <li class="flex items-center text-gray-700">
+              <i class="fas fa-check-circle text-orange-500 text-xl mr-3"></i>
+              Customer Service with 79 languages
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col lg:flex-row items-center lg:space-x-12">
+        <div class="lg:w-5/12 text-center lg:text-left">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+            Accountability that works for you
+          </h2>
+          <p class="mb-4 text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            egestas Werat viverra id et aliquet. Viverra vulputate egestas
+            sollicitudin.
+          </p>
+          <button
+            class="bg-white shadow-sm text-black font-medium text-base px-4 py-2 rounded-full flex justify-center items-center">
+            Know About U
+          </button>
+        </div>
+
+        <div class="lg:w-7/12 mt-8 lg:mt-0 relative">
+          <div class="overflow-hidden rounded-xl shadow-lg">
+            <img class="w-full object-cover" src="img/intro-thumbnail.png" alt="Video Thumbnail" />
+            <button
+              class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-xl hover:bg-opacity-70 transition">
+              <i class="fas fa-play text-white text-4xl"></i>
+            </button>
+          </div>
+          <div class="absolute bottom-0 right-0 -z-10">
+            <img src="images/shape.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-16">
+    <div class="max-w-6xl container mx-auto px-4">
+      <div class="flex flex-col lg:flex-row justify-between items-center mb-10">
+        <div class="lg:w-2/5">
+          <h2 class="text-3xl font-bold text-gray-900 mb-3">
+            Our customers have nice things to say about us
+          </h2>
+        </div>
+        <div class="lg:w-1/3 text-gray-600 mb-3">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            egestas Werat viverra id et aliquet. vulputate egestas
+            sollicitudin.
+          </p>
+        </div>
+      </div>
+      <div class="w-full overflow-x-auto">
+        <div class="flex space-x-4 p-4 min-w-[900px] justify-center">
+          <div class="w-80 flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md flex-shrink-0">
+            <div class="w-20 h-20 border-2 border-[#fa709a] rounded-full overflow-hidden mb-4">
+              <img src="img/user-5.png" alt="" />
+            </div>
+            <h4 class="text-2xl font-semibold">Courtney Henry</h4>
+            <p class="text-[#666666]">microsoft corp</p>
+            <p class="mt-4 text-[#888888]">
+              Our platform helps build secure onboarding authentica
+              experiences & engage your users. We build. Great service and
+              amazing experience!
+            </p>
+            <div class="flex justify-center mt-4 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="w-80 flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md flex-shrink-0">
+            <div class="w-20 h-20 border-2 border-[#fa709a] rounded-full overflow-hidden mb-4">
+              <img src="img/user-2.png" alt="" />
+            </div>
+            <h4 class="text-2xl font-semibold">Ronald Richards</h4>
+            <p class="text-[#666666]">meta limited</p>
+            <p class="mt-4 text-[#888888]">
+              Our platform helps build secure onboarding authentica
+              experiences & engage your users. We build. Great service and
+              amazing experience!
+            </p>
+            <div class="flex justify-center mt-4 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+          <div class="w-80 flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-md flex-shrink-0">
+            <div class="w-20 h-20 border-2 border-[#fa709a] rounded-full overflow-hidden mb-4">
+              <img src="img/user-6.png" alt="" />
+            </div>
+            <h4 class="text-2xl font-semibold">Bessie Cooper</h4>
+            <p class="text-[#666666]">apple inc ltd</p>
+            <p class="mt-4 text-[#888888]">
+              Our platform helps build secure onboarding authentica
+              experiences & engage your users. We build. Great service and
+              amazing experience!
+            </p>
+            <div class="flex justify-center mt-4 text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="my-20 mx-4 lg:mx-0">
+    <div
+      class="lg:max-w-6xl container mx-auto rounded-b-[80px] rounded-t-[20px] px-[30px] lg:pb-[75px] py-10 lg:pt-16 bg-[linear-gradient(184.78deg,#fa709a_7.64%,#fee140_120.07%)]">
+      <div>
+        <div class="lg:flex justify-center gap-5">
+          <h1 class="lg:w-3/6 lg:text-5xl text-4xl text-white font-bold mb-5">
+            Helping teams in the world with focus
+          </h1>
+          <p class="lg:w-[32%] text-white mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            egestas Werat viverra id et aliquet. vulputate egestas sollicitudin
+            .
+          </p>
+        </div>
+        <button
+          class="bg-white border lg:ml-24 mx-auto text-black font-medium px-4 py-2 rounded-full flex justify-center items-center">
+          Download The Theme
+        </button>
+      </div>
+    </div>
+  </section>
+  <footer class="py-14 bg-[#e5e5e580]">
+    <div class="lg max-w-6xl container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-6 gap-5">
+        <div class="lg:mt-12 mt-0 px-4">
+          <img class="lg:mb-8 mb-4" src="./img/logo.svg" alt="">
+          <p class="text-[#888888] text-sm">
+            Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.
+          </p>
+        </div>
+        <div class="lg:mt-12 mt-0 px-4">
+          <h6 class="lg:mb-8 mb-4 font-semibold">
+            Socials
+          </h6>
+          <p class="lg:mb-8 mb-4 text-sm text-[#888888]">
+            themefisher@gmail.com
+          </p>
+          <div>
+            <ul class="flex gap-4">
+              <li
+                class="h-11 w-11 hover:text-white hover:bg-[#FE6019] bg-white rounded-full flex justify-center items-center">
+                <a href="#"><i class="fa-brands text-lg fa-facebook"></i></a>
+              </li>
+              <li
+                class="h-11 w-11 hover:text-white hover:bg-[#FE6019] bg-white rounded-full flex justify-center items-center">
+                <a href="#"><i class="fa-brands text-lg fa-twitter"></i></a>
+              </li>
+              <li
+                class="h-11 w-11 hover:text-white hover:bg-[#FE6019] bg-white rounded-full flex justify-center items-center">
+                <a href="#"><i class="fa-brands text-lg fa-linkedin"></i></a>
+              </li>
+              <li
+                class="h-11 w-11 hover:text-white hover:bg-[#FE6019] bg-white rounded-full flex justify-center items-center">
+                <a href="#"><i class="fa-brands text-lg fa-skype"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:mt-12 mt-0 px-4">
+          <h6 class="lg:mb-8 mb-4 font-semibold">
+            Quick Links
+          </h6>
+          <div>
+            <ul>
+              <li>
+                <a class="hover:text-[#FE6019] hover:underline text-sm text-[#888888]" href="#">About</a>
+              </li>
+              <li>
+                <a class="hover:text-[#FE6019] hover:underline text-sm text-[#888888]" href="#">Category</a>
+              </li>
+              <li>
+                <a class="hover:text-[#FE6019] hover:underline text-sm text-[#888888]" href="#">Testimonial</a>
+              </li>
+              <li>
+                <a class="hover:text-[#FE6019] hover:underline text-sm text-[#888888]" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:mt-12 mt-0 px-4">
+          <h6 class="lg:mb-8 mb-4 font-semibold">
+            Location & Contact
+          </h6>
+          <p class="text-[#888888] text-sm">
+            2118 Thornridge Cir. Syracuse, Connecticut 35624
+          </p>
+          <p class="text-[#888888] text-sm">
+            (704) 555-0127
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
