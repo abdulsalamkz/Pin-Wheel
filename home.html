@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinwheel</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #fafafa;
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/ef6aec1100.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="lg:bg-transparent bg-[#ffffff] relative z-10">
+    <div class="container mx-auto px-4 flex items-center justify-between py-4">
+      <div>
+        <a href="./index.html"> <img src="./img/logo.svg" alt="Logo" /></a>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
+      <label for="menu-toggle" class="sm:block lg:hidden cursor-pointer">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </label>
+      <nav
+        class="hidden peer-checked:flex lg:flex flex-col lg:flex-row lg:space-x-6 absolute lg:static top-16 left-0 right-0 bg-[#ffffff] lg:bg-transparent shadow-md lg:shadow-none z-10">
+        <ul class="flex flex-col lg:flex-row text-gray-700 text-center">
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">Home</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">About</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">Blog</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">Features</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">How It Works</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">Pages</a>
+          </li>
+          <li class="p-2 m-0 lg:ms-6 lg:py-0">
+            <a href="#" class="text-[#0F172A] text-[15px] hover:border-b-2 border-orange-500">Contact</a>
+          </li>
+        </ul>
+        <div class="flex justify-center gap-2 sm:flex md:flex lg:hidden items-center my-4 space-x-4">
+          <a href="#"
+            class="bg-white border text-black font-medium text-base px-4 py-2 text-center rounded-full flex justify-center items-center w-36">
+            Sign Up Now
+          </a>
+        </div>
+      </nav>
+      <div class="hidden lg:flex items-center">
+        <button
+          class="bg-white border text-black font-medium text-base px-4 py-2 rounded-full flex justify-center items-center w-36">
+          Sign Up Now
+        </button>
+      </div>
+    </div>
+  </header>
+  <section class="pt-16 pb-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="grid justify-center">
+        <div class="px-4 py-2 bg-[#E5E5E5] w-max text-sm rounded-full mx-auto">
+          <span class="text-[#FE6019]">
+            <i class="fa-solid fa-house mr-1.5 text-black"></i> Home
+          </span>
+          / Contact
+        </div>
+        <h1 class="mt-8 mb-5 text-5xl text-center font-bold">
+          Get’n touch with Our <br> Pinwheel team
+        </h1>
+      </div>
+      <!-- <div class="grid grid-cols-2">
+        <div>
+          <form class="lg:max-w-[484px]" action="">
+            <div>
+              <label class="" for="name">Full Name</label>
+              <input class="w-full h-[60px]" type="text" name="name" id="">
+            </div>
+          </form>
+        </div>
+      </div> -->
+      <div class="flex flex-col md:flex-row md:items-center md:space-x-8">
+        <div class="md:w-1/2 md:order-2 flex justify-center md:pt-9">
+          <div class="relative inline-flex pl-5 pb-5">
+            <img src="./img/contact-img.png" alt="">
+            <img class="absolute bottom-0 left-0 -z-10 h-14 w-14" src="./img/shape-2.svg" alt="">
+          </div>
+        </div>
+        <div class="md:w-1/2 md:order-1">
+          <form class="max-w-lg mx-auto" action="#">
+            <div class="mb-5">
+              <label class="block text-[#555555] text-base mb-2" for="name">Full Name</label>
+              <input class="w-full h-[60px] border rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#fe6019]" type="text" id="name" placeholder="Your Full Name">
+            </div>
+            <div class="mb-5">
+              <label class="block text-[#555555] text-base mb-2" for="email">Email Address</label>
+              <input class="w-full h-[60px] border rounded-lg px-4 py-2 focus:outline-none focus:ring-1 focus:ring-[#fe6019]" type="email" id="email" placeholder="Your Email Address">
+            </div>
+            <div class="mb-5">
+              <label class="block text-[#555555] text-base mb-2" for="reason">Reason/Purpose</label>
+              <select name="reason" id="reason" class="w-full h-[60px] border rounded-lg px-2 py-3 text-base focus:outline-none focus:ring-1 focus:ring-[#fe6019]" required>
+                <option value="">Select reason/purpose</option>
+                <option value="investment-plan">Investment Plan</option>
+                <option value="investment-plan-2">Investment Plan 2</option>
+                <option value="investment-plan-3">Investment Plan 3</option>
+              </select>
+            </div>
+            <div class="mb-5">
+              <label class="block text-[#555555] text-base mb-2" for="message">Message Here</label>
+              <textarea class="w-full border rounded-lg px-4 py-2 h-36 focus:outline-none focus:ring-1 focus:ring-[#fe6019]" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <input class="w-full h-12 text-white py-2 rounded-full cursor-pointer transition hover:shadow-md" type="submit" style="background-image: linear-gradient(184.78deg, #fa709a 7.64%, #fee140 120.07%);" value="Send Message">
+          </form>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <footer class="py-14 bg-[#e5e5e580]">
+    <div class="lg max-w-6xl container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-6 gap-5">
+        <div class="lg:mt-12 mt-0 px-4">
+          <img class="lg:mb-8 mb-4" src="./img/logo.svg" alt="">
+          <p class="text-[#888888] text-sm">
+            Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.
+          </p>
+        </div>
+        <div class="lg:mt-12 mt-0 px-4">
+          <h6 class="lg:mb-8 mb-4 font-semibold">
+            Socials
+          </h6>
+          <p class="lg:mb-8 mb-4 text-sm text-[#888888]">
+            themefisher@gmail.com
+          </p>
+          <div>
+            <ul class="flex gap-4">
+              <li
+                class="h-11 w-11 hover:text-white hover:bg-[#FE6019] bg-white rounded-full flex justify-center items-center">
+                <a href="#"><i class="fa-brands text-lg fa-facebook"></i></a>
+              </li>
+              <li
+                class="h-11 w-11 hover:text-white hover:bg-[#FE6019] bg-white rounded-full flex justify-center items-center">
+                <a href="#"><i class="fa-brands text-lg fa-twitter"></i></a>
+              </li>
+              <li
+                class="h-11 w-11 hover:text-white hover:bg-[#FE6019] bg-white rounded-full flex justify-center items-center">
+                <a href="#"><i class="fa-brands text-lg fa-linkedin"></i></a>
+              </li>
+              <li
+                class="h-11 w-11 hover:text-white hover:bg-[#FE6019] bg-white rounded-full flex justify-center items-center">
+                <a href="#"><i class="fa-brands text-lg fa-skype"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:mt-12 mt-0 px-4">
+          <h6 class="lg:mb-8 mb-4 font-semibold">
+            Quick Links
+          </h6>
+          <div>
+            <ul>
+              <li>
+                <a class="hover:text-[#FE6019] hover:underline text-sm text-[#888888]" href="#">About</a>
+              </li>
+              <li>
+                <a class="hover:text-[#FE6019] hover:underline text-sm text-[#888888]" href="#">Category</a>
+              </li>
+              <li>
+                <a class="hover:text-[#FE6019] hover:underline text-sm text-[#888888]" href="#">Testimonial</a>
+              </li>
+              <li>
+                <a class="hover:text-[#FE6019] hover:underline text-sm text-[#888888]" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lg:mt-12 mt-0 px-4">
+          <h6 class="lg:mb-8 mb-4 font-semibold">
+            Location & Contact
+          </h6>
+          <p class="text-[#888888] text-sm">
+            2118 Thornridge Cir. Syracuse, Connecticut 35624
+          </p>
+          <p class="text-[#888888] text-sm">
+            (704) 555-0127
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
